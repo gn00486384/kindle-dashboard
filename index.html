@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kindle Dashboard</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    iframe {
+      flex: 1;
+      border: none;
+      background: black;
+      color: white;
+    }
+    .left {
+      flex: 0.7;
+    }
+    .right {
+      flex: 1.3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 左側：Google Sheet 代辦清單 -->
+    <iframe class="left"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT4QHEef5qHmbJViSnJkbVeB2yn2sAhSM7KSQa65nwNwQ4JqnwGBpSTXck2ExyBVxEGpm3lnMTn58iJ/pubhtml?widget=true&headers=false">
+    </iframe>
+
+    <!-- 右側：Google Calendar Agenda -->
+    <iframe class="right"
+      src="https://calendar.google.com/calendar/embed?mode=AGENDA&src=hrh3cjm6frfe81krj958lojn6m148tjf%40import.calendar.google.com&ctz=Asia/Taipei">
+    </iframe>
+  </div>
+</body>
+</html>
